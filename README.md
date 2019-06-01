@@ -19,6 +19,7 @@
 16. eqtl_analysis.py - calculating the number of significant eqtls for data
 17. CLUMPING.sh - performing PLINK clumping on phenotypes and clusters of phenotypes
 18. LSEA - tool for performing hypergeometric test on independent loci
+18. HLA_enrich.py - performing enrichment for HLA-locus and HIST1 gene cluster
 19. enrichment_analysis.py - summarizing enrichment data
 21. var_stats.py - analysis of protein altering variants enrichments for clusters
 22. graph_preparation.py - creating network of shared loci between clusters

@@ -9,16 +9,19 @@ Created on Mon Aug  6 22:11:50 2018
 import csv
 row_dict = {}
 
+
+#результат кластеризации 
 with open('C:\\Downloads\\herit_Manhattan_09_no_0.tsv',newline='') as csvfile:
     my_reader = csv.reader(csvfile, delimiter='\t')
     for row in my_reader:
         row_dict[row[2]]= row[4] 
-        
+
+#название аутпута        
 csvwfile = open('C:\\Downloads\\herit_Var_MAF_jaccard_all_SNP.tsv', 'w',newline='')
 my_writer = csv.writer(csvwfile, delimiter='\t')
 
        
-with open('C:\\Downloads\\Var_MAF.tsv',newline='') as csvfile:
+with open('C:\\Downloads\\Var_MAF_uniq.tsv',newline='') as csvfile:
     my_reader = csv.reader(csvfile, delimiter='\t')
     for row in my_reader:
         if row[0] in row_dict.keys():
